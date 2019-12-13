@@ -12,16 +12,16 @@ class Printer {
 
 	switch($class) {
 	case Text::class:
-	    $printable = $this->item.toString();
+	    $printable = $this->item->toString();
 	    break;
 	case Image::class:
-	    $printable = $this->item.path();
+	    $printable = $this->item->path();
 	    break;
 	case Document::class:
-	    $printable = $this->item.format();
+	    $printable = $this->item->format();
 	    break;
 	}
 
-	Printer.print($printable);
+	Printer::print($printable);
     }
 }

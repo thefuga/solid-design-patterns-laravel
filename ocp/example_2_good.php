@@ -7,11 +7,11 @@
 // unsubscription logic dinamically.
 class Unsubscriber {
     public function __construct(Observer $observer) {
-	$this-observer = $observer;
+	$this->observer = $observer;
     }
 
     public function unsubscribe(User $user) {
-	observer.notify($user); 
+	$this->observer->notify($user); 
     }
 }
 

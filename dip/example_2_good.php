@@ -16,7 +16,7 @@ class UserCharger {
 // Class with different interface can't be injected. This may happen when using SDKs
 // or external/old libraries.
 class PaypalCharger {
-    public function createCharge(ammount, userId) {}
+    public function createCharge($ammount, $userId) {}
 }
 
 // ADAPTER PATTERN allows Paypal to be used as a PaymentGateway.

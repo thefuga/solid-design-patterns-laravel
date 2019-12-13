@@ -9,6 +9,6 @@ class Printer {
     }
 
     public function print() {
-	Printer.print($this->item.printableRepresentation);
+	Printer::print($this->item->printableRepresentation());
     }
 }

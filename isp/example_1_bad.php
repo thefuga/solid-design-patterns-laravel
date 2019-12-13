@@ -24,10 +24,10 @@ class VisitCommand {
 
 // A WebPage interface would force the implementation of all six methods, which would still limit client's flexibility.
 interface WebPageInterface {
-    public function currentUrl();
-    public function setUrl(string $url);
-    public function consoleMessages();
-    public function alertMessages();
-    public function confirmMessages();
-    public function promptMesasges();
+    function currentUrl();
+    function setUrl(string $url);
+    function consoleMessages();
+    function alertMessages();
+    function confirmMessages();
+    function promptMesasges();
 }

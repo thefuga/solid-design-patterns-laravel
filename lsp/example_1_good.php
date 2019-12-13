@@ -18,7 +18,7 @@ class InvitationSignup extends Signup {
 // Callers must decide only which class to create, not how to call it's methods.
 class SignupController extends BaseController {
     public function store(Request $request) {
-	$this->buildSignup($request)->save; 
+	$this->buildSignup($request)->save(); 
 
 	return view('signup');
     }

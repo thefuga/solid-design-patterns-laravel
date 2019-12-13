@@ -2,16 +2,16 @@
 
 // URL methods SEGREGATED to their own interface.
 interface HasUrl {
-    public function currentUrl();
-    public function setUrl(string $url);
+    function currentUrl();
+    function setUrl(string $url);
 }
 
 // Message methods SEGREGATED to their own interface.
 interface HasMessages {
-    public function consoleMessages();
-    public function alertMessages();
-    public function confirmMessages();
-    public function promptMesasges();
+    function consoleMessages();
+    function alertMessages();
+    function confirmMessages();
+    function promptMesasges();
 }
 
 // WebPage implements both interfaces.

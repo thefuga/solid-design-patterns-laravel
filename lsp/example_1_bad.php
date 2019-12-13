@@ -7,6 +7,7 @@ class Signup {
 
     public function save() {
 	$account = Account::create($this->attributes["account"]);	
+
 	return $account->users->create($this->atributes);	
     }
 }
@@ -16,6 +17,7 @@ class InvitationSignup extends Signup {
     public function save($invitation) {
 	$user = parent::save();
 	$invitation->accept($user);
+
 	return $user;
     }
 }

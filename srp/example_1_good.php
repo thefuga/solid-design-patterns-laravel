@@ -19,7 +19,7 @@ abstract class InvitationDecorator {
 }
 
 class SerializedInvitation extends InvitationDecorator {
-    public function to_param() {
+    public function toParam() {
 	// Serialization logic
     }
 }

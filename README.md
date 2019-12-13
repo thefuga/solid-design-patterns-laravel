@@ -61,7 +61,7 @@
 
 - Somehow relates to YAGNI.
 
-## Dependency Inversion Principle [🔗](https://github.com/thefuga/solid-design-patterns-laravel/tree/master/isp)
+## Dependency Inversion Principle [🔗](https://github.com/thefuga/solid-design-patterns-laravel/tree/master/dip)
 > high level modules should not depend on low level modules; both should depend on abstractions.
 > Abstractions should not depend on details. Details should depend upon abstractions.
 
